@@ -1,0 +1,80 @@
+fürs erste: 
+Ich möchte morgen eine Liste von Dingen die ich noch machen muss eintragen können. 
+Jedes Projekt kriegt dabei einen Namen und eine Dringlichkeit nach dem Matrixprinzip. 
+
+Workflow: 
+ich starte morgens die app auf dem handy und plane was ich alles machen möchte. 
+Ich klicke auf dem Kalender auf den Tag und starte das "TagplanProgramm".
+
+"TagplanProgramm"
+Ich erstelle ein Projekt und eine Bedingung wann ich das Projekt abhaken darf. 
+Oder ich führe ein Projekt aus einem vergangenen Tag wieder herein, was nicht abgehakt wurde. 
+Ich erstelle eine Dringlichkeit für dieses Projekt
+innerhalb dieses Projekts sind nochmal weitere ToDos die mit einem Dringlichkeits/Dauer WerteSystem angeordnet werden. 
+
+Ich trage wichtige Termine aus Teams ein.
+
+Ich trage noch todo´s ein die kleinigkeiten sind und nicht als Projekt eintragen werden müssen. 
+
+
+Ich wähle meinen Pausenslot. 
+
+Dann auf "Tag planen" 
+
+Sobald der Tag geplant ist, kann ich aus 3 Ansichten wechseln: 
+
+Ansicht A : 
+Ein CanbanBoard mit Zeit und Taktgeber. 
+
+Zeigt was gerade ansteht, zsm mit einem Timer und die nächsten 3 Tasks. 
+
+**Timer**
+Wenn Timer um ist kommt ein Bildschirm: 
+Ist man mit der Aufgabe fertig geworden ? 
+braucht man noch mehr Zeit ? 
+Macht man wann anders weiter ? Ja -> Notizen
+
+
+
+Watt für features ? 
+
+---Daten--- 
+ProjectData 
+{
+Id
+name 
+WhenToCallFinished
+Done 
+isDoing?
+StartDatum 
+Deadline
+ToDos 
+Prio 
+Dringlichkeit
+}
+
+TodoData 
+
+Tagesplaner
+--data
+----DayModel
+----> Wie ist der Tag geplant/gewesen ? 
+----> Arrays von Blöcken die Arbeitselemente und Kommentare / Actions beinhalten 
+
+--domain
+----entity
+-> DayEntity 
+-> ActionEntity
+
+Zeitgeber
+Kalender
+CanbanBoard
+
+
+Wie sollte ich mehrere Blocs miteinander kommunizieren lassen ? 
+-> Einfach über die Widgets pushen und dann wird die init funktion automatisch aufgerufen ? 
+
+
+
+
+

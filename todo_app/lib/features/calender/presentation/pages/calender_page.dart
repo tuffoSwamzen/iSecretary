@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-import 'package:todo_app/features/canban_board/presentation/pages/canban_board_page.dart';
 
 class CalenderPage extends StatefulWidget {
-  const CalenderPage({super.key, required this.day});
-  final DateTime day;
+  const CalenderPage({super.key});
 
   @override
   State<CalenderPage> createState() => _CalenderPageState();
@@ -54,9 +52,7 @@ class _CalenderPageState extends State<CalenderPage> {
     if (_selectedDay == null) return;
     Navigator.push<void>(
       context,
-      MaterialPageRoute<void>(
-        builder: (BuildContext context) => CanbanBoardPage(day: widget.day),
-      ),
+      MaterialPageRoute<void>(builder: (BuildContext context) => Placeholder()),
     );
   }
 }
